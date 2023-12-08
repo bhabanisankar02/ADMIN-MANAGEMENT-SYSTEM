@@ -1,20 +1,52 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+     <ion-title>Admin Panel</ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+ </ion-header>
+ 
+ <ion-content>
+  <div class="container">
+     <div class="row">
+       <div class="col">
+         <ion-button (click)="sendEmail()">
+           <ion-icon name="mail"></ion-icon>
+           Send Email
+         </ion-button>
+       </div>
+       <div class="col">
+         <ion-button (click)="generateReport()">
+           <ion-icon name="document"></ion-icon>
+           Generate Report
+         </ion-button>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col">
+         <ion-button (click)="manageUsers()">
+           <ion-icon name="people"></ion-icon>
+           Manage Users
+         </ion-button>
+       </div>
+       <div class="col">
+         <ion-button (click)="viewNotifications()">
+           <ion-icon name="notifications"></ion-icon>
+           View Notifications
+         </ion-button>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col">
+         <ion-button (click)="adminSettings()">
+           <ion-icon name="settings"></ion-icon>
+           Admin Settings
+         </ion-button>
+       </div>
+       <div class="col">
+         <ion-button (click)="accessAdminFeatures()">
+           <ion-icon name="rocket"></ion-icon>
+           Access Admin Features
+         </ion-button>
+       </div>
+     </div>
   </div>
-</ion-content>
+ </ion-content>
